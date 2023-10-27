@@ -1,3 +1,7 @@
+import { Routes, Route } from 'react-router-dom';
+import { lazy } from 'react';
+const HomeDummyTable = lazy(() => import('../pages/homeDummyTable'));
+
 export const App = () => {
   return (
     <div
@@ -10,7 +14,9 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Routes>
+        <Route path="/" element={<HomeDummyTable />}/>
+      </Routes>
     </div>
   );
 };
