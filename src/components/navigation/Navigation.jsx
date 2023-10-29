@@ -1,28 +1,28 @@
-import { NavLink } from 'react-router-dom';
+import { StyledUl, StyledNavLink } from './Navigation.styled';
 
 const Navigation = () => {
   return (
     <nav>
-      <ul >
+      <StyledUl >
         <li>
-          <NavLink to="/" >
+          <StyledNavLink to="/" >
                       <button type="button">dummyList</button>
 
-          </NavLink>
+          </StyledNavLink>
         </li>
         <li>
-          <NavLink to="/dummyTable" >
+          <StyledNavLink to="/dummyTable" >
                       <button type="button">dummyTable</button>
 
-          </NavLink>
+          </StyledNavLink>
         </li>
         <li>
-          <NavLink to="/dummyChart" >
+          <StyledNavLink to="/dummyChart" >
                       <button type="button">dummyChart</button>
 
-          </NavLink>
+          </StyledNavLink>
         </li>
-      </ul>
+      </StyledUl>
     </nav>
   );
 };
