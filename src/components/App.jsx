@@ -1,21 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
-const HomeDummyTable = lazy(() => import('../pages/homeDummyTable'));
+// const HomeDummyList = lazy(() => import('../pages/homeDummyList'));
+import Layout from '../components/layout';
+const DummyTable = lazy(() => import('../pages/dummyTable'));
+const DummyChart = lazy(() => import('../pages/dummyChart'));
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <div    >
       <Routes>
-        <Route path="/" element={<HomeDummyTable />}/>
+        <Route path="/" element={<Layout />}>
+          <Route path="dummyTable" element={<DummyTable />} />
+          <Route path="dummyChart" element={<DummyChart />} />
+        </Route>
       </Routes>
     </div>
   );

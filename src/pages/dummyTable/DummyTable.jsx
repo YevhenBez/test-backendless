@@ -1,7 +1,7 @@
-const HomeDummyTable = () => {
+const DummyTable = () => {
     return (
         <table><tr><td>Dummy</td><td>Table</td></tr></table>
     )
 }
 
-export default HomeDummyTable;
+export default DummyTable;
