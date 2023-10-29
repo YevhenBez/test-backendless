@@ -5,7 +5,7 @@ const Navigation = () => {
     <nav>
       <StyledUl >
         <li>
-          <StyledNavLink to="/" >
+          <StyledNavLink to="/dummyList" >
                       <button type="button">dummyList</button>
 
           </StyledNavLink>

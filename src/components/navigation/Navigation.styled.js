@@ -6,6 +6,7 @@ export const StyledUl = styled.ul`
     gap: 30px;
     list-style-type: none;
     background-color: #808000;
+    margin: 0 auto;
 `;
 
 export const StyledNavLink = styled(NavLink)`
