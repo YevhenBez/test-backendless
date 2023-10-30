@@ -1,6 +1,8 @@
 const DummyChart = () => {
     return (
-        <table><tr><td>Dummy</td><td>Chart</td></tr></table>
+        <main>
+            <h1>Dummy Chart</h1>
+        </main>
     )
 }
 

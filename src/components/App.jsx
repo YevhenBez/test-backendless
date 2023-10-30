@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
 import Layout from '../components/layout';
-const HomeDummyList = lazy(() => import('../pages/homeDummyList'));
-const DummyTable = lazy(() => import('../pages/dummyTable'));
-const DummyChart = lazy(() => import('../pages/dummyChart'));
+const HomeDummyList = lazy(() => import('./tabs/dummyList'));
+const DummyTable = lazy(() => import('./tabs/dummyTable'));
+const DummyChart = lazy(() => import('./tabs/dummyChart'));
 
 export const App = () => {
   return (
