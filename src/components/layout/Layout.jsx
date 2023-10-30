@@ -3,11 +3,11 @@ import { Outlet } from 'react-router-dom';
 import Navigation from '../navigation';
 
 
-const Layout = () => {
+const Layout = ({ tabs }) => {
   return (
     <>
       <header >
-        <Navigation />
+        <Navigation dataTabs={tabs} />
       </header>
       <Suspense>
         <Outlet />

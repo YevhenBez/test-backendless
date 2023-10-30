@@ -1,27 +1,15 @@
 import { StyledUl, StyledNavLink } from './Navigation.styled';
 
-const Navigation = () => {
+const Navigation = ({ dataTabs }) => {
   return (
     <nav>
       <StyledUl >
-        <li>
-          <StyledNavLink to="/dummyList" >
-                      <button type="button">dummyList</button>
+                {dataTabs.map(dataTab => (<li>
+          <StyledNavLink key={dataTab.id} to={dataTab.id} >
+                      <button type="button">{dataTab.title}</button>
 
           </StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/dummyTable" >
-                      <button type="button">dummyTable</button>
-
-          </StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/dummyChart" >
-                      <button type="button">dummyChart</button>
-
-          </StyledNavLink>
-        </li>
+        </li>))}
       </StyledUl>
     </nav>
   );

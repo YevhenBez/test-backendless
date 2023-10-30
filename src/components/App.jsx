@@ -22,7 +22,7 @@ export const App = () => {
   return (
     <div    >
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout tabs={sortedData} />}>
           {sortedData.map((tab, i)=> {
               const Page = lazy(() => import(`./${tab.path}`));
               if (i === 0) {
