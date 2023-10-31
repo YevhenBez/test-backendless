@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[63],{63:function(e,n,t){t.r(n),t.d(n,{StyledDummyListLi:function(){return a}});var i,r=t(168),a=t(867).ZP.li(i||(i=(0,r.Z)(["\n    margin-top: 297px;\n\n\n    font-weight: 700;\n    font-size: 64px;\n    line-height: 1.25;\n\n    text-align: center;\n    font-family: Merriweather, serif;\n"])))}}]);
+//# sourceMappingURL=63.7e9d6ebe.chunk.js.map
