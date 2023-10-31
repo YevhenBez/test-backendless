@@ -1,8 +1,10 @@
+import { StyledDummyListLi } from './styles/dummyList/DummyList.styled';
+
 const HomeDummyList = () => {
     return (
         <main>
           <ul>
-            <li>Dummy List</li>
+            <StyledDummyListLi>Dummy List</StyledDummyListLi>
           </ul>
         </main>
     )
