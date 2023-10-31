@@ -1,4 +1,4 @@
-import { StyledUl, StyledNavLink } from './Navigation.styled';
+import { StyledUl, StyledNavLink, StyledButton } from './Navigation.styled';
 
 const Navigation = ({ dataTabs }) => {
   return (
@@ -6,7 +6,7 @@ const Navigation = ({ dataTabs }) => {
       <StyledUl >
                 {dataTabs.map(dataTab => (<li>
           <StyledNavLink key={dataTab.id} to={dataTab.id} >
-                      <button type="button">{dataTab.title}</button>
+                      <StyledButton type="button">{dataTab.title}</StyledButton>
 
           </StyledNavLink>
         </li>))}

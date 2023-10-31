@@ -20,3 +20,20 @@ export const StyledNavLink = styled(NavLink)`
     line-height: 1.21;
     font-family: Merriweather, serif;
 `;
+
+export const StyledButton = styled.button`
+    color: #FFFFFF;
+
+    background-color: #B29F7E;
+    padding: 11px 20px;
+    width: 160px;
+    border-radius: 5px;
+
+    font-family: Merriweather;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.37;
+
+    cursor: pointer;
+
+`;
